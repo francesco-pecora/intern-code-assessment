@@ -1,0 +1,25 @@
+span {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    font-weight: 1000;
+}
+  
+span:hover {
+    border-radius: 30px;
+    background-color: #ddd;
+    opacity: 0.3;
+    color: black;
+}
+
+.previous {
+    width: 80px;
+    opacity: 0.7;
+    transform: rotate(180deg);
+}
+
+.leftArrowDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

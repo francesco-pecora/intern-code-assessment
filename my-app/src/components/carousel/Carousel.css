@@ -1,0 +1,30 @@
+.carouselSlide {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 13% 2% 70% 2% 13%;
+}
+
+.arrowLeft {
+    grid-column: 2/3;
+    margin-top: -300px;
+}
+
+.slideList {
+    grid-column: 1/6;
+    justify-content: center;
+}
+
+.arrowRight {
+    grid-column: 4/5;
+    margin-top: -300px;
+}
+
+@media only screen and (max-width: 727px) {
+    .arrowRight {
+        margin-top: -500px;
+    }
+
+    .arrowLeft {
+        margin-top: -500px;
+    }
+}

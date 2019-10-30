@@ -1,0 +1,56 @@
+.containerSlide {
+    display: flex;
+    justify-content: center;
+    padding-top:15vw;
+}
+
+/*Consists of the image in the slide*/
+/*Need to crop the image to hide the black background from Vimeo*/
+.leftSide {
+    width: 240px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/*Consists of title, description, and buttons below*/
+.rightSide {
+    display: grid;
+    grid-template-rows: 5% 15% 30% auto;
+    grid-template-columns: auto;
+}
+
+.h2Class {
+    grid-row: 2/3;
+    width: 450px;
+    color: white;
+}
+
+.pClass {
+    grid-row: 3/4;
+    width: 450px;
+    color: rgb(223, 223, 223);
+}
+
+.buttons {
+    grid-row: 4/5;
+    display: flex;
+    justify-content: left;
+}
+
+.spaceBetween {
+    width: 20px;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 727px) {
+
+    .buttons {
+        padding-top: 50px;
+        justify-content: center;
+    }
+}
