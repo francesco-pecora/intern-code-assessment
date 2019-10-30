@@ -1,0 +1,29 @@
+.section {
+  margin-top: 2vw;
+  padding-top: 2vw;
+  padding-bottom: 7vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.wrapReverse {
+  flex-wrap: wrap-reverse;
+}
+
+.gradient {
+  color: white;
+  padding-top: 5vw;
+  position:absolute;
+  width: 100%;
+  left:0;
+  background-image: linear-gradient(to bottom, #171616, #7d7a7a);
+}
+
+.space {
+  width: 2vw;
+}

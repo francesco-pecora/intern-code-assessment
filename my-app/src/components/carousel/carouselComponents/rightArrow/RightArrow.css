@@ -1,0 +1,22 @@
+span {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+  
+span:hover {
+  border-radius: 30px;
+  background-color: #ddd;
+  opacity: 0.3;
+  color: black;
+}
+
+.next {
+  width: 80px;
+  opacity: 0.7;
+}
+
+.rightArrowDiv {
+  display: flex;
+  justify-content: center;
+}
