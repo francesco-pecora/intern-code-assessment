@@ -29,7 +29,7 @@ class App extends Component{
   goToCarousel = () => {
     this.setState({route : 'carousel'});
 
-    // need to initialize the value of the slideObject and thumbnail also when opening the carousel
+    // need to update the states also when opening the carousel
     client.request({
       method: 'GET',
       path: '/users/104559028/videos',
@@ -38,7 +38,7 @@ class App extends Component{
         console.log(error);
         return;
       }
-      this.setState({slideObject : body.data[4 - this.state.currentSlide]}); // 4 - currentSlide because on Vimeo the videos are stored the other way around
+      this.setState({slideObject : body.data[4 - this.state.currentSlide]});
       this.setState({thumbnailURL : body.data[4 - this.state.currentSlide].pictures.sizes[3].link})
     })
   }

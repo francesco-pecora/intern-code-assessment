@@ -12,7 +12,24 @@
     font-size: 18px;
 }
 
-a {
-    text-decoration: none;
+/* Centers the video and sets the variable width */
+.videoModal {
+    display: flex;
+    justify-content: center;
+    width: 45vw;
+}
+
+/* centers the video containtainer both horizontally and vertically */
+.modalContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.setBackground{
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.exitButton{
     color: white;
 }

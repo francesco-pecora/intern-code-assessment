@@ -21,7 +21,12 @@ const colorOfButton = [
 
 const SlideList = ({ currentSlide, slideObject, thumbnailURL }) => {
 
-    const videoLink = slideObject.link;
+    let videoHTML = [];
+    
+    if(slideObject.length !== 0){
+        videoHTML = slideObject.embed.html;
+    }
+    
 
     const backgroundStyle = {
         position : "absolute",
@@ -69,7 +74,7 @@ const SlideList = ({ currentSlide, slideObject, thumbnailURL }) => {
                 infoTitle = {slideObject.name}
                 infoDescription = {slideObject.description}
                 infoColor = {colorOfButton[currentSlide].color}
-                videoLink = {videoLink}
+                videoHTML = {videoHTML}
             />
         </div>
     )
