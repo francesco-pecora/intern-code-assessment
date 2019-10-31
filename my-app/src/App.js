@@ -38,7 +38,7 @@ class App extends Component{
         console.log(error);
         return;
       }
-      this.setState({slideObject : body.data[4 - this.state.currentSlide]});
+      this.setState({slideObject : body.data[4 - this.state.currentSlide]}); // 4 - currentSlide because on Vimeo the videos are stored the other way around
       this.setState({thumbnailURL : body.data[4 - this.state.currentSlide].pictures.sizes[3].link})
     })
   }
