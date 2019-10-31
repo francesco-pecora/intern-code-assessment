@@ -3,7 +3,7 @@ import './Slide.css';
 import BuyNow from './slideButtons/BuyButton';
 import Watchtrailer from './slideButtons/WatchTrailer';
 
-const Slide = ({ infoImage, infoTitle, infoDescription, infoColor }) => {
+const Slide = ({ infoImage, infoTitle, infoDescription, infoColor, videoLink }) => {
 
     return (
         <div className='containerSlide wrap'>
@@ -21,7 +21,7 @@ const Slide = ({ infoImage, infoTitle, infoDescription, infoColor }) => {
                 <div className='buttons'>
                     <BuyNow infoColor = {infoColor}/>
                     <div className='space'/>
-                    <Watchtrailer/>
+                    <Watchtrailer videoLink = {videoLink}/>
                 </div>
             </div>
             

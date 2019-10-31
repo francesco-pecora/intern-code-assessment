@@ -5,14 +5,13 @@ const RightArrow = ({ currentSlide, moveToRight, requestVimeoVideo }) => {
 
     // function that updates which video object from Vimeo we are looking at
     const whenClickRight = (currentSlide) => {
-        moveToRight();
-
         // avoiding error when looping around the list
         if(currentSlide === 4){
             requestVimeoVideo(0);
         } else {
             requestVimeoVideo(currentSlide + 1);
         }
+        moveToRight();
     }
 
     return (

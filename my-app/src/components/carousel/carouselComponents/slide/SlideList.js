@@ -21,6 +21,8 @@ const colorOfButton = [
 
 const SlideList = ({ currentSlide, slideObject, thumbnailURL }) => {
 
+    const videoLink = slideObject.link;
+
     const backgroundStyle = {
         position : "absolute",
         zIndex : "-2",
@@ -30,6 +32,7 @@ const SlideList = ({ currentSlide, slideObject, thumbnailURL }) => {
         height : "1000px",
         width : "100%",
         filter: "blur(15px)",
+        overflow : "hidden",
     };
 
     const contentStyle = {
@@ -66,6 +69,7 @@ const SlideList = ({ currentSlide, slideObject, thumbnailURL }) => {
                 infoTitle = {slideObject.name}
                 infoDescription = {slideObject.description}
                 infoColor = {colorOfButton[currentSlide].color}
+                videoLink = {videoLink}
             />
         </div>
     )

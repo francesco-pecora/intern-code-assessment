@@ -5,14 +5,13 @@ const LeftArrow = ({ currentSlide, moveToLeft, requestVimeoVideo }) => {
 
     // function that updates which video object from Vimeo we are looking at
     const whenClickLeft = (currentSlide) => {
-        moveToLeft();
-
         // avoiding error when looping around the list
         if(currentSlide === 0){
             requestVimeoVideo(4);
         } else {
             requestVimeoVideo(currentSlide - 1); 
-        } 
+        }
+        moveToLeft();
     }
 
     return (
