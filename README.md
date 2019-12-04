@@ -1,9 +1,12 @@
-## -- Intern Code Assessment --
-
 ## Instructions to run
 
-From the root folder of the progect (./my-app), run "npm start".
-Package Needed : vimeo 2.1.1  -->  npm install vimeo
+From the root folder of the progect (./my-app), run
+
+### `npm start`
+
+Package Needed : vimeo 2.1.1 
+
+### `npm install vimeo`
 
 ## Available Scripts
 
